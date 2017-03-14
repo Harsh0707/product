@@ -30,7 +30,7 @@ Resources:
             SecurityGroups: 
                 - !Ref SecurityGroup
             Tags: 
-                - Key: Name
+                - Key: LB_SG
                   Value: !Ref EnvironmentName
 
     LoadBalancerListener:
