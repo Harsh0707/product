@@ -8,32 +8,32 @@ Parameters:
 
     EnvironmentName:
         Description: An environment name that will be prefixed to resource names
-        Type: String
+        Type: Staging
 
     VpcCIDR: 
         Description: Please enter the IP range (CIDR notation) for this VPC
-        Type: String
-        Default: 10.192.0.0/16
+        Type: Staging-vpc
+        Default: 172.30.0.0/16
 
     PublicSubnet1CIDR:
         Description: Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone
-        Type: String
-        Default: 10.192.10.0/24
+        Type: Public_1
+        Default: 172.30.1.0/24
 
     PublicSubnet2CIDR:
         Description: Please enter the IP range (CIDR notation) for the public subnet in the second Availability Zone
-        Type: String
-        Default: 10.192.11.0/24
+        Type: Public_2
+        Default: 172.30.2.0/24
 
     PrivateSubnet1CIDR:
         Description: Please enter the IP range (CIDR notation) for the private subnet in the first Availability Zone
-        Type: String
-        Default: 10.192.20.0/24
+        Type: Private_1
+        Default: 172.30.3.0/24
 
     PrivateSubnet2CIDR:
         Description: Please enter the IP range (CIDR notation) for the private subnet in the second Availability Zone
-        Type: String
-        Default: 10.192.21.0/24
+        Type: Private_2
+        Default: 172.30.4.0/24
 
 Resources:
 
