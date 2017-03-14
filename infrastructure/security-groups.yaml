@@ -28,7 +28,7 @@ Resources:
                 - SourceSecurityGroupId: !Ref LoadBalancerSecurityGroup 
                   IpProtocol: -1
             Tags: 
-                - Key: Name
+                - Key: SG_EC2
                   Value: !Sub ${EnvironmentName}-ECS-Hosts
 
     # This security group defines who/where is allowed to access the Application Load Balancer.
@@ -44,7 +44,7 @@ Resources:
                 - CidrIp: 0.0.0.0/0
                   IpProtocol: -1
             Tags: 
-                - Key: Name
+                - Key: SG_LB
                   Value: !Sub ${EnvironmentName}-LoadBalancers
 
 Outputs:
