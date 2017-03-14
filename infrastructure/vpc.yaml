@@ -13,27 +13,27 @@ Parameters:
     VpcCIDR: 
         Description: Please enter the IP range (CIDR notation) for this VPC
         Type: Staging-vpc
-        Default: 172.30.0.0/16
+        Default: 
 
     PublicSubnet1CIDR:
         Description: Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone
         Type: Public_1
-        Default: 172.30.1.0/24
+        Default: 
 
     PublicSubnet2CIDR:
         Description: Please enter the IP range (CIDR notation) for the public subnet in the second Availability Zone
         Type: Public_2
-        Default: 172.30.2.0/24
+        Default: 
 
     PrivateSubnet1CIDR:
         Description: Please enter the IP range (CIDR notation) for the private subnet in the first Availability Zone
         Type: Private_1
-        Default: 172.30.3.0/24
+        Default: 
 
     PrivateSubnet2CIDR:
         Description: Please enter the IP range (CIDR notation) for the private subnet in the second Availability Zone
         Type: Private_2
-        Default: 172.30.4.0/24
+        Default: 
 
 Resources:
 
