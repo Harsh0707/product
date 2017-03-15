@@ -22,11 +22,11 @@ Resources:
             TemplateURL: https://s3.amazonaws.com/ecs-refarch-cloudformation/infrastructure/vpc.yaml
             Parameters:
                 EnvironmentName:    !Ref AWS::StackName
-                VpcCIDR:            
-                PublicSubnet1CIDR:  
-                PublicSubnet2CIDR:  
-                PrivateSubnet1CIDR: 
-                PrivateSubnet2CIDR: 
+                VpcCIDR:          192.168.0.0/16  
+                PublicSubnet1CIDR:  192.168.1.0/24
+                PublicSubnet2CIDR:  192.168.2.0/24
+                PrivateSubnet1CIDR: 192.168.3.0/24
+                PrivateSubnet2CIDR: 192.168.4.0/24
 
     SecurityGroups:
         Type: AWS::CloudFormation::Stack
